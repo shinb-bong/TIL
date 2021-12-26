@@ -1,0 +1,74 @@
+Firebase
+회원기능 NoSQL 데이터 베이스 사용 웹 호스팅등 제공
+장점 : 무료, 스케일업 자동으로 가능, 리얼타임싱크 제공( 서로 바로바로 업데이트)
+단점 : 비싸고 친절하지 않음
+——
+Npm install firebase or 코드를 삽입
+앞은 Vue , React 경우 뒤는 JS
+파이어베이스 사이트에 가서 쓰고 싶은 기능 활성화
+Npm install -g firebase -tools @ 9.23.1 ->파이어베이스 툴 
+Firebase login 
+Firebase init 
+쓸기능 선택후 해당 상황에 맞는 선택을 고른다.
+Single-page 는 react 이런 것 일때 선택한다.
+버전은 8.x가 자료가 많다. 
+
+프로젝트 설정 -> 앱만들기 -> 태그 삽입 -> firebase serve해서 미리보기 가능
+—
+Collection : 폴더
+Document : 하나의 상품(파일)
+
+Const db = firebase.firestore()
+Db.collection(‘해당 콜렉션’).get().then()
+규칙 설정 해줘야함.
+
+forEach -> 반복문으로 사용하는 문법
+——
+상품이 동적으로 변하기 때문에 무지성 복붙 말고 반복문을 사용하여 짜야한다.
+Var 000 = 틱’ <div>~~’ 하면 자바 스크립트 추가가능
+
+$(“.클래스명”).append(000) 하면 클래스명 항목에 이러한 항목을 추가해주세요 를 뜻함 -> jquery문법
+변수를 넣을땐 ${변수}를 해야함.
+——
+새로운 document 를 넣을때
+두가지 방법이 존재 
+db.collection(‘콜렉션’).doc(‘이름’).set({속성}); -> 이름을 직접부여하고 속성을 넣음
+db.collection(‘콜렉션’).add({속성}) ->이름을 자동적으로 부여 (보통 이 방법을 사용)
+날짜 저장은 new Date()를 사용
+
+.then().catch() 성공했을때 코드 및 실패했을 때 에러 송출 코드를 작성해 줄 수 있음
+—
+이미지 저장은 DB에 직접적으로 하지않는다.
+이미지는 Storage에 저장후 저장된 위치(URL)을 가져다가 사용한다.
+Const storage = firebase.storage();
+
+var file = document.querySelector('#image').files[0];
+var storageRef = storage.ref();
+var 저장할경로 = storageRef.child('image/' + '파일명');
+var 업로드작업 = 저장할경로.put(file)
+
+처럼 사용하며 저장된건 Storage에 저장되어있음
+업로드작업.on( 'state_changed', 
+    // 변화시 동작하는 함수 
+    null, 
+    //에러시 동작하는 함수
+    (error) => {
+      console.error('실패사유는', error);
+    }, 
+    // 성공시 동작하는 함수
+    () => {
+      업로드작업.snapshot.ref.getDownloadURL().then((url) => {
+        console.log('업로드된 경로는', url);
+      });
+    }
+);
+Image : url 해서 저장해주면된다
+—
+가입기능 
+Firebase.auth() 로그인 기능 구현
+firebase().auth().createUserWithEmailAndPassword(이메일,패스워드) 로 사용
+.then().catch()
+
+자바스크립트에서 해당 요소 내용 가저오는건 $(‘#id’).val() 하면 가져와진다.
++ 제일중요한 항목은 uid 항목이며 유저 구분을 해준다. 확인은 Authentication 항목에서 가능하다.
+
