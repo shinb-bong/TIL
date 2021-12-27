@@ -11,8 +11,8 @@ id = ${doc.id}
 
 상세페이지에서 해당 id를 받아오려면 url의 id 부분을 받아오면 되는데
 
-`var query = new URLSearchParmas(window.location.search);
-db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{}) 문법 사용`
+`var query = new URLSearchParmas(window.location.search);`
+`db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{}) 문법 사용`
 
 로그인 기능
 
@@ -36,4 +36,39 @@ JSON.parse(jitem).항목
 
 로그아웃 할땐 삭제를 해주는게 효율적이므로
 localstorage.removeItem('정보이름');    
+
+사용자 인증
+----
+
+상세 페이지 수정 같은 경우 작성자만 수정을 하게 진행해야한다.
+
++ 미리 누가 작성했는지를 기록해야한다.
++ 정보는 URL에 담겨있는 id 정보를 받아온다.
++ 수정버튼을 수정해준다.
+
+해당 박스에 넣을때는 
+$('title).val(---)
+
+Firebase 수정하는 코드
+---
+db.collection('product').doc('URL에서가져온 id ').update(바꾸고 싶은 항목);
+
+또한 사용자 인증은 임시방편으로 프론트에서 서로의 아이디 일치로 확인할 수 있지만 
+Firebase 규칙탭에서 하는 것이 좋다.
+
+규칙
+---
++ match /콜렉션/{아무거나작명} {
+}
++ 위에 {아무거나작명}은 콜렉션 하위에 모두 적용한다는 뜻 하나만 하고싶으면 /콜렉션/상품 처럼 경로를 적어주면 된다.
++ {작명 = **} 이건 모든 하위 문서에 대해 적용한다는 뜻
++ allow update, allow create 등 다 명시해주면된다.
+
+if request.auth.uid = resource.data.uid
+
+를 적어줘야 인증기능 활성화 가능
+
+Firebase는 관대하기 때문에 규칙이 중복 적용 되어있으면 허용쪽으로 허락해 주기때문에 필요한 규칙아니면 삭제한다.
+
+
 
