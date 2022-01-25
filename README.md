@@ -15,7 +15,7 @@ https://github.com/shinb-bong/tensorflow_pandas_algorithm
 + 우타이테 홈페이지(React & Django)
 https://github.com/btl831/website_newsong
 
-+ 첫 React 실습(웹툰 페이지-toy)
++ 첫 React 실습(Ajax, 기본 동작, 웹툰페이지)
 https://shinb-bong.github.io/
 
 + 춘천 재난지원금 사용처
