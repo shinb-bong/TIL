@@ -6,8 +6,8 @@ https://github.com/shinb-bong/DAP__
 DAP__ 추가 실습 정리
 https://github.com/shinb-bong/tensorflow_pandas_algorithm
 
-
-
+Tensorflow Study (Concept and Example)
+https://drive.google.com/drive/folders/1_1MngVCd1AFLOcz546UDqCyw7fWs9qEM?usp=sharing
 
 
 ***도전해본것***
