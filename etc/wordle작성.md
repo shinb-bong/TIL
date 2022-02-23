@@ -1,4 +1,4 @@
-Wordle
+Wordle GAME
 ---
 
 해당 문서는 
@@ -15,3 +15,5 @@ https://www.nytimes.com/games/wordle/index.html 이러한 웹 게임을 보고 �
 >> POINT
 
  현재는 간단하게 abcde로만 했지만 다양한 실사용되는 5글자를 사용하는것이 좋을 것 같고 입력하는 값 또한 있는 단어를 사용 해야할 것 같다.
+
++살짝 우리나라 숫자 야구하고 비슷한 언어 야구인것 같다.
