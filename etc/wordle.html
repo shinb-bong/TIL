@@ -1,0 +1,77 @@
+<!-- Wordle예제 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        <title>Wordle_example</title>
+    </head>
+    <body>
+        <!-- css -->
+        <style>
+            input{
+                width:50px;
+                height: 50px;
+                font-size: 40px;
+                text-align: center;
+
+            }
+        </style>
+        
+        <input class ="input">
+        <input class ="input">
+        <input class ="input">
+        <input class ="input">
+        <input class ="input">
+
+        <button>제출</button>
+
+        <script>
+            var answer = 'abcde'; //5글자 단어 준비하는법 생각, 쓰는 단어만 써야하는걸 생각
+
+            document.querySelector('button').addEventListener('click',
+            function(){
+
+                var input = document.querySelectorAll('.input');
+
+                // 문자열 비교
+                for(let i =0;i<5;i++){
+                    // 자리가 맞았을때
+                    if(input[i].value == answer[i]){
+                        input[i].style.background = 'green';
+                    }
+                    // 속한 문자가 맞았을때
+                    else if (answer.includes(input[i].value)){
+                        input[i].style.background = 'yellow';
+                    }
+                    // 아무것도 아닐때.
+                    else{
+                        input[i].style.background='lightgrey';
+                    }
+                }
+
+                
+                // 틀렸을 경우 그 다음 기회
+                if (input.value != answer.value) {
+                    var template = `<div>
+                        <input class ="input">
+                        <input class ="input">
+                        <input class ="input">
+                        <input class ="input">
+                        <input class ="input">
+                    <div>`;
+                    
+                }
+                // 맞았을 경우 그다음 기회를 주지 않고 축하해준다.
+                else{
+                    var template = `<a>맞았어요!!<a>`
+                }
+                document.querySelector('body').insertAdjacentHTML
+                ("beforeend",template);
+            })
+        </script>
+    </body>
+</html>
