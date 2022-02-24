@@ -83,7 +83,8 @@ driver.execute_script('arguments[0].click();', e)
 
 원하는 속성가져오기
 ```
-이미지 = driver.find_element_by_css_selector('').get_attribute('src)
+이미지 = driver.find_element_by_css_selector('').get_attribute('src')
+// 이렇게 하면 이미지 url가져와짐
 ```
 
 이미지 파일 저장
