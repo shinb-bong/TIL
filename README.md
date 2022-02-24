@@ -21,6 +21,8 @@ https://github.com/btl831/website_newsong
 + 첫 React 실습(Ajax, 기본 동작, 웹툰페이지)
 https://shinb-bong.github.io/
 
+> <img width="80%" src="https://github.com/shinb-bong/TIL/blob/main/webtoon_page.gif"/>
+
 + 춘천 재난지원금 사용처
 https://github.com/princesssubinwith5man/web
 
