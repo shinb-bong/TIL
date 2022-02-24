@@ -17,7 +17,6 @@ https://github.com/btl831/website_newsong
 
 > <img width="80%" src="https://github.com/shinb-bong/TIL/blob/main/MOUM.gif"/>
 
-출처: https://ndb796.tistory.com/557 [안경잡이개발자]
 
 + 첫 React 실습(Ajax, 기본 동작, 웹툰페이지)
 https://shinb-bong.github.io/
