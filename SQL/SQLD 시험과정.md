@@ -37,3 +37,85 @@ SQLD 시험과정
 8. 반복적 속성 값은 원자성에 위배가 된다 -> 1NF정규화
 
 9. DELETE 는 기록을 남기고 ROLLBACK가능 사용자 commit, TRUNCATE and Drop TABLE은 기록을 안남김 ROLLBACK 불가능 오토 commit 
+
+10. 인스턴스에서 관리하고자 하는 의미상 더 이상 분리 되지 않는 최소의 데이터 단위: 속성(ATTRIBUTE)
+
+11. 속성은 인스턴스에선 무조건 개당 하나 
+엔티티에서는 2개 이상
+
+12. 도메인: 각 엔티티의 속성에 대해서 어떤 유형이 들어 가는지 정의하고 제약하는 것
+
+13. ERD는 존재와 행위를 구분하지 않지만 클래스 다이어그램은 구분한다. 
+
+14. 혼자 독립을 하고 싶거나 따로 놀고싶으면 자식은 비식별자, 나머지는 식별자
+- 또한 이렇게 되었을 경우 약한 엔티티로 표현
+
+15. 정규화-> 용량산정-> 트랜잭션 유형 파악 -> 반정규화-> PK등 조정
+
+16. 2NF 는 부분 함수 종속성 / 독립을 하게되면 1:M 관계가 된다.
+
+17. 반복적 속상값, 칼럼 단위 중복 => 1NF
+
+18. 칼럼수가 많은 테이블 --> 1:1 테이블로 분리하면 디스크 I/O 
+
+19. 물리적으로 여러개의 테이블로 분리: 파티셔닝
+
+20. UNION하면 성능이 저하될 가능성이 높음
+
+21. "=" 로 한정되는 항목을 앞쪽으로 배치해야함.
+
+22. FK도 별도의 인덱스가 필요함.
+
+23. 비절차적 데이터 조작어: 무슨 데이터를 원하는지 명세
+
+24. 절차적 데이터 조작어: 명세하고 접근법에 대해서도 명세
+
+25. ALTER TABLE PRODUCT ADD CONSTRAINT PRODUCT_PK PRIMARY KEY(PROD_ID) 혹은 CREATE 시에 CONTSTRAINTN 로 지정
+
+26. SQL 서버는 컬럼을 동시에 수정하는 구문이 되지않는다. 괄호 사용 역시 안된다.
+
+27. COLUMN 삭제는 *ALTER* TABLE EMP *DROP COLUMN* COMM;
+
+28. 테이블 이름 변경: *RENAME* \<old table> *TO* \<NEW table>
+
+29. DML 기록을 남김 / TRUNCATE, DROP TABLE은 기록을 안남김
+
+30. DROP, TRUCATE: AUTO COMMIT/ DELETE: 사용자 커밋
+
+***31. ORACLE: AUTO COMMIT, ""=NULL, NULL은 가장 큰값 / SQL SERVER: NOT AUTO COMMIT, ""="", NULL은 가장 작은값***
+
+32. NVL(표현식1,표현식2): 표현식1의 결과값이 NULL이면 표현식2 출력
+-  NULLIF(표현식1,표현식2): 표현식1과 표현식2가 같으면 NULL 아니면 표현식 1 리턴
+- COALESCE: NULL이 아닌 최초의 표현식 리턴
+
+33. 연관 서브 쿼리는 WHERE절에 명시해야한다. 
+
+34. GROUP BY를 쓰면 GROUP BY 표현식이 아니면 사용 x
+
+35. WITH TIES: 값이 동일한데 출력을 같이할때 사용
+
+36. USING 조건절을 이용한 EQUI JOIN은 NATURAL 처럼 접두사를 사용할 수 없다.
+
+37. WHERE은 필터링 이자만 ON (IN)은 전체중에 몇개를 적용해 줄 지 적는것.
+
+38. UNION ALL: 중복을 허용해서 합치기// UNION: 중복을 허용하지 않고 합친다.
+
+39. PRIOR은 CONNECT BY, SELECT, WHERE 사용가능
+
+40. 복수행을 반환하려면 IN,ALL,ANY 복수행 연산자 사용
+
+41. 다중 컬럼 서브쿼리는 SQL SERVER에서 지원하지 않는다.
+
+42. 서브쿼리에서는 ORDER BY 사용 불가능
+
+43. 비연관 서브쿼리가 보통 메인쿼리 정보 제공
+
+44. 단일행(<,=등)은 다중행(IN,ALL)에 사용 불가능 하지만 역치는 가능
+
+45. SELECT는 단일행 연관, FROM은 INLINE, DYNAMIC VIEW, WHERE 다중행 연관
+
+46. ROLLUP(A,B) => (A,B) (A) () 세개 진행 
+- 계층 구조가 있는 것을 집계처리.
+
+47. GROUPING SETS
+- 계층 구조가 없음
