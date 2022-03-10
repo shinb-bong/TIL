@@ -5,7 +5,7 @@ SQLD 시험과정
 
 ----
 
-2022.03.08 1회독 완료 후 
+2022.03.08 
 
 1. 추상화 단순화 정확화
 
@@ -119,3 +119,27 @@ SQLD 시험과정
 
 47. GROUPING SETS
 - 계층 구조가 없음
+
+48. 순위
+- RANK() => 동일 값엔 같은 순위 그다음 순서는 건너뜀 ex)1,1,3
+- DENSE RANK => 동일 값 같은 순위 그다음 순서 건너뛰지x ex)1,1,2
+- Row _ NUMBER => 동일값도 다른 순위 ex)1,2,3
+
+49. 000 별로 ~ => PARTION BY
+
+50. GRUOP BY와 WINDWO FUNCTION 같이 사용가능 
+
+51. LAG는 현재 읽혀진 데이터의 이전 값, LEAD는 이후 값
+
+52. PL/SQL은 별도의 트렌젝션 분리가능
+
+53. PL/SQL은 동적SQL 이나 DDL 실행할떄 EXECUTE IMMEDIATE 사용 
+
+54. Trigger: 데이터 베이스에 의해서 자동으로 호출, Procedure와 달리 TCL 사용불가
+
+---
+55.  Hash sort: 집계, 무조건 EQUI 조건에서만 일어남
+-  NL Join:OLTP, 자연조인, 랜덤엑세스 , 유니크 인덱스를 활용하여 소량일때 유용, Driving Table 영향 o
+- Sort Join: 조인 칼럼을 기준으로 데이터를 정렬하여 조인을 수행,인덱스 영향 받지 않는다,Driving Table 영향 x but 모든 정렬 작업 어려우면 성능이 저하
+
+56. EXISTS는 보통 SEMI JOIN에 등장  
