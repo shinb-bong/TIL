@@ -70,7 +70,7 @@ SQLD 시험과정
 
 24. 절차적 데이터 조작어: 명세하고 접근법에 대해서도 명세
 
-25. ALTER TABLE PRODUCT ADD CONSTRAINT PRODUCT_PK PRIMARY KEY(PROD_ID) 혹은 CREATE 시에 CONTSTRAINTN 로 지정
+25. ALTER TABLE PRODUCT ADD CONSTRAINT PRODUCT_PK PRIMARY KEY(PROD_ID) 혹은 CREATE 시에 CONTSTRAINT 로 지정
 
 26. SQL 서버는 컬럼을 동시에 수정하는 구문이 되지않는다. 괄호 사용 역시 안된다.
 
@@ -127,7 +127,7 @@ SQLD 시험과정
 
 49. 000 별로 ~ => PARTION BY
 
-50. GRUOP BY와 WINDWO FUNCTION 같이 사용가능 
+50. GRUOP BY와 WINDOW FUNCTION 같이 사용가능 
 
 51. LAG는 현재 읽혀진 데이터의 이전 값, LEAD는 이후 값
 
@@ -143,3 +143,22 @@ SQLD 시험과정
 - Sort Join: 조인 칼럼을 기준으로 데이터를 정렬하여 조인을 수행,인덱스 영향 받지 않는다,Driving Table 영향 x but 모든 정렬 작업 어려우면 성능이 저하
 
 56. EXISTS는 보통 SEMI JOIN에 등장  
+
+---
+
+시험보기 직전  2022.03.11 
+
+총 공부량:
+
+    이론 요약본 2회독 
+    SQL 자격검정 실전 문제 오답후 4회독
+    
+가기전 이론 한번만 더 읽어보자
+
+침착하게 마지막 지문까지 읽기
+
+9:30 여의도중 시험
+
+
+---
+결과: 
