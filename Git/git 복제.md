@@ -19,8 +19,9 @@ git clone -b { 브랜치명 } --single-branch --mirror { git repository 주소 }
 ```
 // clone을 정상적으로 완료했다면 repository명.git 파일이 생성되어 있을 것이다
 
-// 아래의 명령어를 통해 이름을 .git으로 변경
-mv repository명.git .git 
+// 해당 프로젝트.git으로 이동
+
+cd {프로젝트명}.git
 ```
 
 3.새로운 repository와 연결
