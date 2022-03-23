@@ -1,5 +1,8 @@
 # TIL Today I Learned
 
+컴퓨터 관련 궁금증 및 해결
+https://inexpensive-hourglass-2f4.notion.site/ff7ffce8ba2643a29c24c8699c83cc23
+
 DAP__ 실습 예제
 https://github.com/shinb-bong/DAP__
 
