@@ -3,7 +3,7 @@
 컴퓨터 관련 궁금증 및 해결
 https://inexpensive-hourglass-2f4.notion.site/ff7ffce8ba2643a29c24c8699c83cc23
 
-</br>
+<hr/>
 
 DAP__ 실습 예제
 https://github.com/shinb-bong/DAP__
@@ -13,7 +13,6 @@ https://github.com/shinb-bong/tensorflow_pandas_algorithm
 
 Tensorflow Study (Concept and Example)
 https://drive.google.com/drive/folders/1_1MngVCd1AFLOcz546UDqCyw7fWs9qEM?usp=sharing
-
 
 ***도전해본것***
 
