@@ -6,3 +6,5 @@
 2. Nginx(2022.04.18)
 3. Docker(2022.04.19)
 4. RabbitMQ(2022.04.20)
+5. ElasticSearch(2022.04.21)
+6. Redis(2022.04.22)
