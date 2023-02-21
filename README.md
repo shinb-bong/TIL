@@ -7,6 +7,30 @@ BOJ 알고리즘 꾸준하게 도전하자!
 >https://inexpensive-hourglass-2f4.notion.site/ff7ffce8ba2643a29c24c8699c83cc23
 
 <hr/>
+<h3>Project (Ver.2023.02.21)</h3>
+
++ Comgram(Spring, JPA, React, Spring Security, Jwt, Oauth)
+
+    https://github.com/KangWCB/comgram
+
++ SpringPage_shinb_bong
+(Spring, JPA, Thymeleaf, Session, Oauth, Spring Security)
+
+    https://github.com/shinb-bong/SpringPage_shinb_bong
+
++ Jpop Introduce Site(React & Django)
+https://github.com/btl831/website_newsong
+
+    <img width="80%" src="https://github.com/shinb-bong/TIL/blob/main/MOUM.gif"/>
+
++ 첫 React 실습(Ajax, 기본 동작, 웹툰페이지)
+    https://shinb-bong.github.io/
+
+> <img width="80%" src="https://github.com/shinb-bong/TIL/blob/main/webtoon_page.gif"/>
+
++ 춘천 재난지원금 사용처
+https://github.com/princesssubinwith5man/web
+
 
 <h3>DAP__ </h3>
 
@@ -20,30 +44,7 @@ https://github.com/shinb-bong/tensorflow_pandas_algorithm
 
 >https://drive.google.com/drive/folders/1_1MngVCd1AFLOcz546UDqCyw7fWs9qEM?usp=sharing
 
-***Project (Ver.2023.02.21)***
-+ Comgram(Spring, JPA, React, Spring Security, Jwt, Oauth)
-
-    https://github.com/KangWCB/comgram
-
-+ SpringPage_shinb_bong
-(Spring, JPA, Thymeleaf, Session, Oauth, Spring Security)
-
-    https://github.com/shinb-bong/SpringPage_shinb_bong
-
-+ Jpop Introduce Site(React & Django)
-https://github.com/btl831/website_newsong
-
-> <img width="80%" src="https://github.com/shinb-bong/TIL/blob/main/MOUM.gif"/>
-
-+ 첫 React 실습(Ajax, 기본 동작, 웹툰페이지)
-https://shinb-bong.github.io/
-
-> <img width="80%" src="https://github.com/shinb-bong/TIL/blob/main/webtoon_page.gif"/>
-
-+ 춘천 재난지원금 사용처
-https://github.com/princesssubinwith5man/web
-
-Team
+***Team***
 
 ----
 + KangWCB https://github.com/KangWCB
