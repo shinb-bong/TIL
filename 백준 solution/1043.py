@@ -29,9 +29,9 @@ for i in range(m):
 print(answer)
 
 # 끝나고 회고
-for _ in range(m):
-    for party in parties:
-        if party & knowList:
-            knowList = knowList.union(party)
+# for _ in range(m):
+#     for party in parties:
+#         if party & knowList:
+#             knowList = knowList.union(party)
 # 이렇게 set 과 set의 합집합으로 풀어낸 좋은 방법도 있었다.
 #결국은 파티를 다 돌고 한번 더 검사한 내 풀이도 맞지만
