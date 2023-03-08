@@ -16,20 +16,21 @@ bisect_right(literable, value) : 오른쪽 인덱스를 구하기
 LIS bisect 구현
 ----
 
-
+```
 import bisect
 
 x = int(input())
 arr = list(map(int, input().split()))
 
-dp = [arr[0]]
+answer = [arr[0]]
 
 for i in range(x):
     if arr[i] > dp[-1]:
 
-        dp.append(arr[i])
+        answer.append(arr[i])
     else:
-        idx = bisect.bisect_left(dp, arr[i])
-        dp[idx] = arr[i]
+        idx = bisect.bisect_left(answer, arr[i])
+        answer[idx] = arr[i]
 
-print(len(dp))
+print(len(answer))
+```
