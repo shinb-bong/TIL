@@ -2,6 +2,8 @@
 
 BOJ 알고리즘 꾸준하게 도전하자!
 
+# 2024.04 현재는 BOJ 알고리즘 해결한 사안을 저장하기 위한 리포지토리로만 사용하고 있습니다!
+
 **Back-end 컴퓨터 관련 궁금증 해결 및 실습**
 
 >https://inexpensive-hourglass-2f4.notion.site/ff7ffce8ba2643a29c24c8699c83cc23
